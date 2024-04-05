@@ -27,14 +27,13 @@
                     <div class="col-md-9 col-sm-9">
                         <div class="profile-content">
                         <h2 style="font-family: 'Roboto', sans-serif; font-size: 28px; color: #333; font-weight: bold;">{{ Auth::user()->name }}</h2>
-<ul class="information" style="list-style-type: none; padding: 0;">
-    <li style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #666;"><span style="font-weight: bold;">Name:</span> {{ Auth::user()->name }}</li>
-    <li style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #666;"><span style="font-weight: bold;">Email:</span> {{ Auth::user()->email }}</li>
-    <!-- <li><span>Country:</span>{{ Auth::user()->country }}</li>
-    <li><span>Phone No:</span>{{ Auth::user()->phone_code }}</li> -->
-    <li style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #666;"><span style="font-weight: bold;">User Type:</span> User</li>
-</ul>
-
+                            <ul class="information" style="list-style-type: none; padding: 0;">
+                                <li style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #666;"><span style="font-weight: bold;">Name:</span> {{ Auth::user()->name }}</li>
+                                <li style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #666;"><span style="font-weight: bold;">Email:</span> {{ Auth::user()->email }}</li>
+                                <li style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #666;"><span>Country:</span>{{ Auth::user()->country }}</li>
+                                <li style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #666;"><span>Phone No:</span>123123123</li>
+                                <li style="font-family: 'Roboto', sans-serif; font-size: 16px; color: #666;"><span style="font-weight: bold;">User Type:</span> User</li>
+                            </ul>
                         @php
                         $userId=Auth::user()->id;
                         @endphp

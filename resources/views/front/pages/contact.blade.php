@@ -47,7 +47,7 @@
                     <div class="contact__info">
                         <h3>Contact Info</h3>
                         <p>
-                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a distribution of letters.
+                        Have a question or comment? We'd love to hear from you! Simply fill out the form, and we'll get back to you as soon as possible. Your feedback is valuable to us!. "Need to get in touch? Feel free to reach out to us via email or contact given below. Our team is here to assist you!
                         </p>
                         <ul>
                             <li><i class="fa fa-envelope mr-3"></i> info@funolympics.com </li>

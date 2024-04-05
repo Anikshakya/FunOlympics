@@ -29,8 +29,8 @@ $liveVideos=App\Models\Video::where('status',1)->get();
             </div>
             <div class="row">
             @foreach($liveVideos as $liveVideo)
-                <div class="col-lg-3 col-sm-6 p-0">
-                    <div class="soccer-item set-bg" data-setbg="{{ url('/') }}/public/storage/posts/{{  $liveVideo->thumbnail  }}">
+                <div class="col-lg-3 mb-4 video-column">
+                    <div class="soccer-item set-bg " style="position: relative; overflow: hidden; border-radius: 4px;" data-setbg="{{ url('/') }}/public/storage/posts/{{  $liveVideo->thumbnail  }}">
                         <div class="si-tag">{{ $liveVideo->category }}</div>
                         <div class="si-text">
                             <h5><a href="{{ route('videoDetail',$liveVideo->id) }}">{{ $liveVideo->title }}</a></h5>
