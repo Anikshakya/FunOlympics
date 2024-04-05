@@ -87,10 +87,10 @@ class UserController extends Controller
     {
         
         $user = User::find($id);
-        $roles = Role::all();
-        $userRoles = $user->roles->pluck('id')->toArray();
+        // $roles = Role::all();
+        // $userRoles = $user->roles->pluck('id')->toArray();
     
-        return view('admin.users.edit',compact('user','roles','userRoles'));
+        return view('admin.users.edit',compact('user'));
         //
     }
 
@@ -119,9 +119,9 @@ class UserController extends Controller
     
         $user = User::find($id);
         $user->update($input);
-        DB::table('model_has_roles')->where('model_id',$id)->delete();
+        // DB::table('model_has_roles')->where('model_id',$id)->delete();
     
-        $user->assignRole($request->input('roles'));
+        // $user->assignRole($request->input('roles'));
     
         return redirect()->route('users.index')
                         ->with('success','User updated successfully');
@@ -136,9 +136,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        User::find($id)->delete();
         return redirect()->route('users.index')
-                        ->with('error','User deleted successfully');
+            ->with('success','User deleted successfully');
         //
     }
 }

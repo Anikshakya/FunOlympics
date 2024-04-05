@@ -63,7 +63,7 @@ Auth::routes(['verify' => true]);
       Route::post('/video/status/{id}', [VideoController::class, 'status']);
       Route::resource('users', UserController::class);
       Route::get('/contact/{id}', [ContactController::class, 'show'])->name('contactDetail');
-    
+      Route::delete('/contact/{id}', [ContactController::class, 'destroy'])->name('contact.destroy');
 
   });
 });

@@ -84,6 +84,10 @@ class ContactController extends Controller
      */
     public function destroy($id)
     {
+        DB::table('contactus')->where('id',$id)->delete();
+        session()->flash('success','Contact Delete Succesfully');
+        return redirect('/admin');
+     
         //
     }
 }
